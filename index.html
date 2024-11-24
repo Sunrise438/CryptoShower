@@ -1,28 +1,21 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple BTC Faucet</title>
     <link rel="stylesheet" href="style.css">
-    <title>Fan Made Videos</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">Fan Made Videos</div>
-        <div class="nav-items">
-            <a href="pastvideos.html">Past Videos</a>
-        </nav>
-
-    <!-- MP4, WebM, and Ogg -->
-    <iframe autoplay src="https://www.youtube.com/embed/rwQGrG2bpdk?si=6cSDvhJ3vrbhnrTC?" width="560" height="315" title="Gym Workout Routine😲" frameborder="0" allowfullscreen></iframe>
-    
-    <section class="hero">
-        <div class="hero-container">
-            <div class="column-left">
-                <h1>Views Unlimited<br>Messages & Videos</br></h1>
-            </div>
-        </div>
-    </section>
+    <div class="container">
+        <h1>Free Bitcoin Faucet</h1>
+        <p>Enter your FaucetPay email to claim free BTC:</p>
+        <form id="faucet-form">
+            <input type="email" id="faucetpay-email" placeholder="Your FaucetPay Email" required>
+            <button type="submit" id="claim-btn">Claim BTC</button>
+        </form>
+        <p id="message"></p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
