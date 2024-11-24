@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const messageDiv = document.getElementById("message");
     const claimButton = document.getElementById("claim-btn");
 
-    const faucetPayApiKey = "YOUR_FAUCETPAY_API_KEY"; // Replace with your API key
+    const faucetPayApiKey = "3f1f60d48c8913449bab8682a4f0a69780e5dcf471f9d831ec2b945271755f51"; // Replace with your API key
     const cooldownMinutes = 1; // Cooldown period in minutes
     const rewardAmount = 0.00000001; // BTC reward
     const currency = "BTC";
