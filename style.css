@@ -42,3 +42,13 @@ button:disabled {
     font-size: 14px;
     color: #555;
 }
+{
+  "status": 200,
+  "message": "OK",
+  "rate_limit_remaining": 9.99780024,
+  "currency": "BTC",
+  "balance": "8673047351",
+  "balance_bitcoin": "86.73047351",
+  "payout_id": 109,
+  "payout_user_hash": "c448e31098a8dfb48248f7e2374e77674bb90925"
+}
