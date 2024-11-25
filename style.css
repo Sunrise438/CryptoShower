@@ -1,54 +1,62 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
-.container {
-    max-width: 400px;
-    margin: 50px auto;
+#admin-dashboard {
     background: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input[type="email"] {
+h1 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="number"], input[type="text"] {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
 }
 
-button {
-    padding: 10px 15px;
+button[type="button"] {
     background-color: #28a745;
     color: white;
     border: none;
+    padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-button:disabled {
-    background-color: #aaa;
-    cursor: not-allowed;
+button[type="button"]:hover {
+    background-color: #218838;
 }
 
-#message {
+table {
+    width: 100%;
+    border-collapse: collapse;
     margin-top: 20px;
-    font-size: 14px;
-    color: #555;
 }
-{
-  "status": 200,
-  "message": "OK",
-  "rate_limit_remaining": 9.99780024,
-  "currency": "BTC",
-  "balance": "8673047351",
-  "balance_bitcoin": "86.73047351",
-  "payout_id": 109,
-  "payout_user_hash": "c448e31098a8dfb48248f7e2374e77674bb90925"
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
 }
