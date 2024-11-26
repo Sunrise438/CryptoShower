@@ -1,5 +1,5 @@
 // Initialize EmailJS
-emailjs.init("wwillow829"); // Replace YOUR_USER_ID with your EmailJS user ID
+emailjs.init("service_kgm1hp9"); // Replace YOUR_USER_ID with your EmailJS user ID
 
 // Claim Timer and User Balance
 const claimButton = document.getElementById('claimButton');
