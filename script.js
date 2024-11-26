@@ -89,11 +89,11 @@ withdrawForm.addEventListener('submit', (e) => {
 
   emailjs
   var templateParams = {
-  name: 'James',
+  name: 'Whispering',
   notes: 'Check this out!',
 };
 
-emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams).then(
+emailjs.send('service_kgm1hp9', '__ejs-test-mail-service__', templateParams).then(
   (response) => {
     console.log('SUCCESS!', response.status, response.text);
   },
