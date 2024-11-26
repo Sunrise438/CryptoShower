@@ -72,7 +72,7 @@ withdrawForm.addEventListener('submit', (e) => {
   };
 
   emailjs
-    .send('service_kgm1hp9', 'template_xo9ifpn', templateParams)
+    .send('service_kgm1hp9', '__ejs-test-mail-service__', templateParams)
     .then(() => {
       withdrawMessage.innerText = 'Withdrawal request sent!';
       logTransaction(`Requested withdrawal of ${balance} Satoshi to ${withdrawWallet}`);
