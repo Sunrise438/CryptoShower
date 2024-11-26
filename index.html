@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Faucet</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Crypto Faucet</h1>
+    <p id="timer">You can claim every 15 seconds.</p>
+    <p id="balance">Your Balance: 0 Satoshi</p>
+    <button id="claimButton" disabled>Claim 1 Satoshi</button>
+    <p id="claimMessage"></p>
+  </div>
+
+  <div class="withdrawal">
+    <h2>Withdrawal Request</h2>
+    <form id="withdrawForm">
+      <label for="withdrawFaucetPayEmail">Enter your FaucetPay Email:</label>
+      <input type="text" id="withdrawFaucetPayEmail" placeholder="Your FaucetPay Email here" required>
+      <button type="submit">Request Withdrawal</button>
+    </form>
+    <p id="withdrawMessage"></p>
+  </div>
+
+  <div class="transactions">
+    <h2>Transaction Log</h2>
+    <ul id="transactionLog"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
