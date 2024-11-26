@@ -1,5 +1,5 @@
 // Initialize EmailJS
-emailjs.init("YOUR_USER_ID"); // Replace YOUR_USER_ID with your EmailJS user ID
+emailjs.init("wwillow829"); // Replace YOUR_USER_ID with your EmailJS user ID
 
 // Claim Timer and User Balance
 const claimButton = document.getElementById('claimButton');
@@ -72,7 +72,7 @@ withdrawForm.addEventListener('submit', (e) => {
   };
 
   emailjs
-    .send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+    .send('service_kgm1hp9', 'template_xo9ifpn', templateParams)
     .then(() => {
       withdrawMessage.innerText = 'Withdrawal request sent!';
       logTransaction(`Requested withdrawal of ${balance} Satoshi to ${withdrawWallet}`);
