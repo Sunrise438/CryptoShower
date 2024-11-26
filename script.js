@@ -1,5 +1,21 @@
 // Initialize EmailJS
-emailjs.init("service_kgm1hp9"); // Replace YOUR_USER_ID with your EmailJS user ID
+emailjs.init({
+  publicKey: 'qFZMYU6AuJWP0pzl-',
+  // Do not allow headless browsers
+  blockHeadless: true,
+  blockList: {
+    // Block the suspended emails
+    list: ['foo@emailjs.com', 'bar@emailjs.com'],
+    // The variable contains the email address
+    watchVariable: 'wwillow829@gmail.com',
+  },
+  limitRate: {
+    // Set the limit rate for the application
+    id: 'app',
+    // Allow 1 request per 10s
+    throttle: 10000,
+  },
+});
 
 // Claim Timer and User Balance
 const claimButton = document.getElementById('claimButton');
@@ -72,18 +88,19 @@ withdrawForm.addEventListener('submit', (e) => {
   };
 
   emailjs
-    .send('service_kgm1hp9', '__ejs-test-mail-service__', templateParams)
-    .then(() => {
-      withdrawMessage.innerText = 'Withdrawal request sent!';
-      logTransaction(`Requested withdrawal of ${balance} Satoshi to ${withdrawFaucetPayEmail}`);
-      balance = 0;
-      localStorage.setItem('balance', balance);
-      balanceDisplay.innerText = `Your Balance: ${balance} Satoshi`;
-    })
-    .catch(() => {
-      withdrawMessage.innerText = 'Failed to send withdrawal request. Try again later.';
-    });
-});
+  var templateParams = {
+  name: 'James',
+  notes: 'Check this out!',
+};
+
+emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams).then(
+  (response) => {
+    console.log('SUCCESS!', response.status, response.text);
+  },
+  (error) => {
+    console.log('FAILED...', error);
+  },
+);
 
 // Transaction Log
 const transactionLog = document.getElementById('transactionLog');
